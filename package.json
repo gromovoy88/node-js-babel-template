@@ -5,8 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "babel-node": "babel-node",
+    "dev": "nodemon --exec babel-node src/index.js",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build",
+    "serve" : "nodemon dist/index.js",
     "test": "jest"
   },
   "repository": {
