@@ -1,0 +1,44 @@
+{
+  "name": "js-babel-template",
+  "version": "1.0.0",
+  "description": "Basic template for node-js",
+  "main": "src/index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gromovoy88/node-js-babel-template.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "ES6",
+    "Babel",
+    "Jest"
+  ],
+  "author": "Yaroslav Hromovyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gromovoy88/node-js-babel-template/issues"
+  },
+  "homepage": "https://github.com/gromovoy88/node-js-babel-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.1",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0"
+  }
+}
